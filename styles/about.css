@@ -1,0 +1,64 @@
+/* ── About ─────────────────────────────────────────────────── */
+.about-text,
+.about-image {
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.about-text {
+  transform: translateX(-60px);
+}
+
+.about-image {
+  transform: translateX(60px);
+}
+
+.about.in-view .about-text,
+.about.in-view .about-image {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.about.in-view .about-image {
+  transition-delay: 0.15s;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  padding: 33px 8% 0;
+}
+
+.about-text h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: #2f3a34;
+  margin-bottom: 1.4rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #2f3a34;
+}
+
+.about-image {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .about {
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+    padding: 80px 6%;
+  }
+
+  .about-image {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
