@@ -5,12 +5,14 @@
   transition: opacity 1s ease, transform 1s ease;
 }
 
-.about-text {
-  transform: translateX(-60px);
-}
+@media (min-width: 769px) {
+  .about-text {
+    transform: translateX(-60px);
+  }
 
-.about-image {
-  transform: translateX(60px);
+  .about-image {
+    transform: translateX(60px);
+  }
 }
 
 .about.in-view .about-text,
