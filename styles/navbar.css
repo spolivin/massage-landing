@@ -1,0 +1,139 @@
+/* ── Navbar ────────────────────────────────────────────────── */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  height: 72px;
+  background: #fff;
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
+}
+
+.navbar.hidden {
+  transform: translateY(-100%);
+}
+
+.nav-logo {
+  font-weight: 800;
+  font-size: 1.4rem;
+  /* letter-spacing: 0.12em; */
+  color: #2f3a34;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.4rem;
+  list-style: none;
+}
+
+.nav-links a {
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #2f3a34;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #c9a96e;
+  transition: width 0.25s ease;
+}
+
+.nav-links a:hover {
+  color: #c9a96e;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* ── Hamburger button ──────────────────────────────────────── */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.nav-hamburger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #2f3a34;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.nav-hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .nav-hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    border-top: 1px solid #f0ede8;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 1rem 5%;
+    font-size: 0.85rem;
+  }
+
+  .nav-links a::after {
+    display: none;
+  }
+}
