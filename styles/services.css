@@ -144,6 +144,34 @@
   stroke: #2f3a34;
 }
 
+@media (max-width: 768px) {
+  .services {
+    padding: 48px 4%;
+  }
+
+  .slider-wrapper {
+    gap: 0.5rem;
+  }
+
+  .slider-arrow {
+    width: 36px;
+    height: 36px;
+  }
+
+  .slider-arrow svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .slide-content {
+    padding: 1.2rem;
+  }
+
+  .slide-content p {
+    font-size: 0.85rem;
+  }
+}
+
 /* ── Counter ────────────────────────────────────────────────── */
 .slider-counter {
   margin-top: 1rem;
