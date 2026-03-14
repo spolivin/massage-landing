@@ -1,0 +1,154 @@
+/* ── Services ──────────────────────────────────────────────── */
+.services {
+  padding: 63px 14%;
+  background: #f3ecdc;
+}
+
+.services-header {
+  margin-bottom: 2.4rem;
+  text-align: center;
+}
+
+.services-header h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  color: #2f3a34;
+  margin-bottom: 0.8rem;
+}
+
+.services-header p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #2f3a34;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* ── Slider wrapper ─────────────────────────────────────────── */
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ── Track ─────────────────────────────────────────────────── */
+.services-track {
+  display: flex;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ── Slides ─────────────────────────────────────────────────── */
+.service-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.service-slide img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.slide-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+}
+
+.slide-content h3 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.6rem;
+}
+
+.slide-content p {
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 420px;
+}
+
+.slide-btn {
+  margin-top: 1.4rem;
+  display: inline-block;
+  padding: 0.65rem 2rem;
+  background: #fff;
+  color: #2f3a34;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 100px;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.slide-btn:hover {
+  background: #c9a96e;
+  color: #fff;
+}
+
+/* ── Arrows ─────────────────────────────────────────────────── */
+.slider-arrow {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-arrow svg {
+  width: 36px;
+  height: 36px;
+  stroke: #2f3a34;
+  stroke-width: 1.5;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke 0.2s;
+}
+
+.slider-arrow:hover svg {
+  stroke: #c9a96e;
+}
+
+.slider-arrow:disabled {
+  opacity: 0.25;
+  cursor: default;
+}
+
+.slider-arrow:disabled:hover svg {
+  stroke: #2f3a34;
+}
+
+/* ── Counter ────────────────────────────────────────────────── */
+.slider-counter {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: #2f3a34;
+}
