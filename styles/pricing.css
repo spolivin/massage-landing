@@ -1,0 +1,122 @@
+/* ── Pricing ────────────────────────────────────────────────── */
+.pricing {
+  padding: 80px 8%;
+  background: #fff;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.pricing-header h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  color: #2f3a34;
+  margin-bottom: 0.8rem;
+}
+
+.pricing-header p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #2f3a34;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  border: 1px solid #e8dfd0;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.pricing-card h3 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #2f3a34;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-desc {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #2f3a34;
+  opacity: 0.7;
+  margin-bottom: 1.5rem;
+}
+
+.pricing-options {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+  flex: 1;
+}
+
+.pricing-options li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #f3ecdc;
+}
+
+.pricing-options li:last-child {
+  border-bottom: none;
+}
+
+.duration {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #2f3a34;
+}
+
+.price {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #c9a96e;
+}
+
+.pricing-btn {
+  display: inline-block;
+  text-align: center;
+  padding: 0.65rem 1.5rem;
+  background: #2f3a34;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: background 0.2s;
+}
+
+.pricing-btn:hover {
+  background: #c9a96e;
+}
+
+@media (max-width: 1024px) {
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+}
