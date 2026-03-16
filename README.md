@@ -13,7 +13,9 @@ This project is a frontend skills showcase. The business, brand, content, and co
 - CSS custom layouts: flexbox, CSS grid, scroll snap
 - Responsive design with mobile breakpoints
 - Vanilla JS for UI interactions (no libraries)
-- Scroll-triggered animations via `IntersectionObserver`
+- Scroll-triggered animations via `IntersectionObserver` (fade-up, slide-in, scale)
+- Accessible accordion (FAQ) with ARIA attributes
+- Fixed UI: back-to-top button (desktop only), hide/show navbar on scroll
 - Local custom fonts via `@font-face` (no Google Fonts)
 
 ## Sections
@@ -26,7 +28,9 @@ This project is a frontend skills showcase. The business, brand, content, and co
 | Services     | Image slider with arrows and overlay text                                |
 | Benefits     | Four-column icon grid                                                    |
 | Testimonials | Three-column cards with quote icon                                       |
-| Contact      | Four-column info grid (address, phone, email, hours)                     |
+| Pricing      | Four-column cards with duration and price options per service            |
+| FAQ          | Accordion with five questions, no nav link                               |
+| Contact      | Two-column: info left, enquiry form right (submission disabled)          |
 | Footer       | Logo and copyright                                                       |
 
 ## Running locally
@@ -62,7 +66,7 @@ The image uses `nginx:alpine` to serve the static files. No application runtime 
 ```
 index.html
 styles/        # One CSS file per section
-scripts/       # navbar.js, slider.js, animations.js
+scripts/       # navbar.js, slider.js, animations.js, faq.js, contact.js, back-to-top.js
 fonts/         # Local Montserrat woff2 files
 images/        # avif images
 Dockerfile     # nginx:alpine image for static serving
