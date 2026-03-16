@@ -520,32 +520,82 @@
         <form class="contact-form" novalidate>
           <div class="form-group">
             <label for="contactName">Name</label>
-            <input type="text" id="contactName" name="name" placeholder="Jane Smith" required />
+            <input
+              type="text"
+              id="contactName"
+              name="name"
+              placeholder="Jane Smith"
+              required
+            />
           </div>
           <div class="form-group">
             <label for="contactEmail">Email</label>
-            <input type="email" id="contactEmail" name="email" placeholder="jane@example.com" required />
+            <input
+              type="email"
+              id="contactEmail"
+              name="email"
+              placeholder="jane@example.com"
+              required
+            />
           </div>
           <div class="form-group">
             <label for="contactMessage">Message</label>
-            <textarea id="contactMessage" name="message" rows="5" placeholder="Tell us about your needs or preferred appointment time…" required></textarea>
+            <textarea
+              id="contactMessage"
+              name="message"
+              rows="5"
+              placeholder="Tell us about your needs or preferred appointment time…"
+              required
+            ></textarea>
           </div>
           <button type="submit" class="contact-btn">Send Message</button>
         </form>
-
       </div>
     </section>
 
     <!-- ── Footer ───────────────────────────────────────────────── -->
     <footer class="footer">
-      <a href="#" class="footer-logo">Logo</a>
-      <p class="footer-copy">
-        &copy; 2026 Serenity Massage. All rights reserved.
-      </p>
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">Serenity</a>
+          <p class="footer-tagline">Restore. Balance. Renew.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="footer-info">
+          <p>24 Serenity Lane, London W1A 1AA</p>
+          <p><a href="tel:+442071234567">+44 (0)20 7123 4567</a></p>
+          <p>
+            <a href="mailto:hello@serenitymassage.co.uk"
+              >hello@serenitymassage.co.uk</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2026 Serenity Massage. All rights reserved.
+        </p>
+        <a href="#" class="footer-top-link">Back to top</a>
+      </div>
     </footer>
 
     <button id="backToTop" class="back-to-top" aria-label="Back to top">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
         <polyline points="18 15 12 9 6 15" />
       </svg>
     </button>
