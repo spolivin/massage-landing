@@ -38,6 +38,35 @@
   border: 1px solid #e8dfd0;
   border-radius: 8px;
   background: #fff;
+  position: relative;
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.pricing-card.in-view {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.pricing-card.popular {
+  border-color: #c9a96e;
+}
+
+.pricing-badge {
+  position: absolute;
+  top: -0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #c9a96e;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.9rem;
+  border-radius: 100px;
+  white-space: nowrap;
 }
 
 .pricing-card h3 {
