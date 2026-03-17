@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="styles/benefits.css" />
     <link rel="stylesheet" href="styles/testimonials.css" />
     <link rel="stylesheet" href="styles/pricing.css" />
+    <link rel="stylesheet" href="styles/faq.css" />
     <link rel="stylesheet" href="styles/contact.css" />
     <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/back-to-top.css" />
   </head>
   <body>
     <!-- ── Navbar ──────────────────────────────────────────────── -->
@@ -25,8 +27,6 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#benefits">Benefits</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -43,7 +43,7 @@
           Experience the ultimate in relaxation and healing with our expert
           massage therapy services.
         </p>
-        <a href="#contact" class="hero-cta">Booking now</a>
+        <a href="#contact" class="hero-cta">Book now</a>
       </div>
     </section>
 
@@ -63,6 +63,7 @@
         class="about-image"
         src="images/therapist-image.avif"
         alt="Massage therapist at work"
+        loading="lazy"
       />
     </section>
 
@@ -81,7 +82,11 @@
         </button>
         <div class="services-track" id="servicesTrack">
           <div class="service-slide">
-            <img src="images/hero-background.avif" alt="Swedish Massage" />
+            <img
+              src="images/hero-background.avif"
+              alt="Swedish Massage"
+              loading="lazy"
+            />
             <div class="slide-content">
               <h3>Swedish Massage</h3>
               <p>
@@ -92,7 +97,11 @@
             </div>
           </div>
           <div class="service-slide">
-            <img src="images/hero-background.avif" alt="Deep Tissue Massage" />
+            <img
+              src="images/hero-background.avif"
+              alt="Deep Tissue Massage"
+              loading="lazy"
+            />
             <div class="slide-content">
               <h3>Deep Tissue</h3>
               <p>
@@ -103,7 +112,11 @@
             </div>
           </div>
           <div class="service-slide">
-            <img src="images/hero-background.avif" alt="Hot Stone Massage" />
+            <img
+              src="images/hero-background.avif"
+              alt="Hot Stone Massage"
+              loading="lazy"
+            />
             <div class="slide-content">
               <h3>Hot Stone</h3>
               <p>
@@ -114,7 +127,11 @@
             </div>
           </div>
           <div class="service-slide">
-            <img src="images/hero-background.avif" alt="Sports Massage" />
+            <img
+              src="images/hero-background.avif"
+              alt="Sports Massage"
+              loading="lazy"
+            />
             <div class="slide-content">
               <h3>Sports Massage</h3>
               <p>
@@ -213,6 +230,7 @@
               class="quote-icon"
               src="images/quote-image.avif"
               alt="Quote"
+              loading="lazy"
             />"Absolutely the best massage I've ever had. I came in with
             terrible back pain and left feeling completely renewed. The
             therapist knew exactly where to work."
@@ -231,6 +249,7 @@
               class="quote-icon"
               src="images/quote-image.avif"
               alt="Quote"
+              loading="lazy"
             />"I've been coming here every month for a year. The hot stone
             massage is my favourite — deeply relaxing and the atmosphere is so
             peaceful. Highly recommend."
@@ -249,6 +268,7 @@
               class="quote-icon"
               src="images/quote-image.avif"
               alt="Quote"
+              loading="lazy"
             />"As someone who trains regularly, sports massage has been a game
             changer for my recovery. Professional, attentive, and always
             tailored to what my body needs."
@@ -262,53 +282,219 @@
     <section class="pricing" id="pricing">
       <div class="pricing-header">
         <h2>Pricing</h2>
-        <p>Choose the session that suits your needs. All treatments include a complimentary consultation.</p>
+        <p>
+          Choose the session that suits your needs. All treatments include a
+          complimentary consultation.
+        </p>
       </div>
       <div class="pricing-grid">
-
-        <div class="pricing-card">
+        <div class="pricing-card popular">
+          <span class="pricing-badge">Most Popular</span>
           <h3>Swedish Massage</h3>
           <p class="pricing-desc">Full-body relaxation and stress relief.</p>
           <ul class="pricing-options">
-            <li><span class="duration">30 min</span><span class="price">£35</span></li>
-            <li><span class="duration">60 min</span><span class="price">£55</span></li>
-            <li><span class="duration">90 min</span><span class="price">£75</span></li>
+            <li>
+              <span class="duration">30 min</span><span class="price">£35</span>
+            </li>
+            <li>
+              <span class="duration">60 min</span><span class="price">£55</span>
+            </li>
+            <li>
+              <span class="duration">90 min</span><span class="price">£75</span>
+            </li>
           </ul>
           <a href="#contact" class="pricing-btn">Book Now</a>
         </div>
 
         <div class="pricing-card">
           <h3>Deep Tissue</h3>
-          <p class="pricing-desc">Chronic tension relief targeting deeper muscle layers.</p>
+          <p class="pricing-desc">
+            Chronic tension relief targeting deeper muscle layers.
+          </p>
           <ul class="pricing-options">
-            <li><span class="duration">30 min</span><span class="price">£40</span></li>
-            <li><span class="duration">60 min</span><span class="price">£65</span></li>
-            <li><span class="duration">90 min</span><span class="price">£85</span></li>
+            <li>
+              <span class="duration">30 min</span><span class="price">£40</span>
+            </li>
+            <li>
+              <span class="duration">60 min</span><span class="price">£65</span>
+            </li>
+            <li>
+              <span class="duration">90 min</span><span class="price">£85</span>
+            </li>
           </ul>
           <a href="#contact" class="pricing-btn">Book Now</a>
         </div>
 
         <div class="pricing-card">
           <h3>Hot Stone</h3>
-          <p class="pricing-desc">Deep warmth and relaxation with heated basalt stones.</p>
+          <p class="pricing-desc">
+            Deep warmth and relaxation with heated basalt stones.
+          </p>
           <ul class="pricing-options">
-            <li><span class="duration">60 min</span><span class="price">£70</span></li>
-            <li><span class="duration">90 min</span><span class="price">£90</span></li>
+            <li>
+              <span class="duration">60 min</span><span class="price">£70</span>
+            </li>
+            <li>
+              <span class="duration">90 min</span><span class="price">£90</span>
+            </li>
           </ul>
           <a href="#contact" class="pricing-btn">Book Now</a>
         </div>
 
         <div class="pricing-card">
           <h3>Sports Massage</h3>
-          <p class="pricing-desc">Recovery and performance for active individuals.</p>
+          <p class="pricing-desc">
+            Recovery and performance for active individuals.
+          </p>
           <ul class="pricing-options">
-            <li><span class="duration">30 min</span><span class="price">£40</span></li>
-            <li><span class="duration">60 min</span><span class="price">£65</span></li>
-            <li><span class="duration">90 min</span><span class="price">£85</span></li>
+            <li>
+              <span class="duration">30 min</span><span class="price">£40</span>
+            </li>
+            <li>
+              <span class="duration">60 min</span><span class="price">£65</span>
+            </li>
+            <li>
+              <span class="duration">90 min</span><span class="price">£85</span>
+            </li>
           </ul>
           <a href="#contact" class="pricing-btn">Book Now</a>
         </div>
+      </div>
+    </section>
 
+    <!-- ── FAQ ──────────────────────────────────────────────────── -->
+    <section class="faq" id="faq">
+      <div class="faq-header">
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know before booking your first session.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What is the difference between Swedish and Deep Tissue massage?
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Swedish Massage uses long, flowing strokes to promote full-body
+              relaxation and improve circulation — ideal if you're new to
+              massage or looking to unwind. Deep Tissue targets the deeper
+              layers of muscle and connective tissue using slower, firmer
+              pressure, making it better suited for chronic tension, stiffness,
+              or specific problem areas. If you're unsure, our therapists will
+              help you choose during your consultation.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What should I expect during my first visit?
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Arrive a few minutes early to complete a short health
+              questionnaire. Your therapist will walk you through the treatment
+              plan, answer any questions, and ensure you're comfortable
+              throughout. After your session you'll have time to rest before
+              leaving.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How often should I get a massage?
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              For general relaxation and stress relief, once or twice a month is
+              ideal. If you're addressing a specific issue such as chronic pain
+              or sports recovery, weekly sessions may be recommended initially.
+              Your therapist will advise based on your individual needs.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Is Hot Stone massage suitable for everyone?
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Hot Stone massage is deeply relaxing but not suitable for
+              everyone. We advise against it if you have cardiovascular
+              conditions, diabetes, skin sensitivities, or are pregnant. Please
+              let us know about any health conditions when booking and our
+              therapists will confirm whether it is appropriate for you or
+              suggest an alternative.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What is your cancellation policy?
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              We ask for at least 24 hours notice for cancellations or
+              rescheduling. Late cancellations or no-shows may be subject to a
+              cancellation fee of 50% of the session price. We understand that
+              life happens — please contact us as early as possible if your
+              plans change.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -317,67 +503,153 @@
       <div class="contact-header">
         <h2>Get in Touch</h2>
       </div>
-      <div class="contact-grid">
-        <div class="contact-item">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24">
-              <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
-              <circle cx="12" cy="10" r="3" />
-            </svg>
+      <div class="contact-body">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <div>
+              <h3>Address</h3>
+              <p>24 Serenity Lane<br />London, W1A 1AA</p>
+            </div>
           </div>
-          <h3>Address</h3>
-          <p>24 Serenity Lane<br />London, W1A 1AA</p>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3>Telephone</h3>
+              <p><a href="tel:+442071234567">+44 (0)20 7123 4567</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <div>
+              <h3>Email</h3>
+              <p>
+                <a href="mailto:hello@serenitymassage.co.uk"
+                  >hello@serenitymassage.co.uk</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+            </div>
+            <div>
+              <h3>Working Hours</h3>
+              <p>Mon – Fri: 9am – 8pm<br />Sat – Sun: 10am – 6pm</p>
+            </div>
+          </div>
         </div>
-        <div class="contact-item">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24">
-              <path
-                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
-              />
-            </svg>
+
+        <form class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="contactName">Name</label>
+            <input
+              type="text"
+              id="contactName"
+              name="name"
+              placeholder="Jane Smith"
+              required
+            />
           </div>
-          <h3>Telephone</h3>
+          <div class="form-group">
+            <label for="contactEmail">Email</label>
+            <input
+              type="email"
+              id="contactEmail"
+              name="email"
+              placeholder="jane@example.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Message</label>
+            <textarea
+              id="contactMessage"
+              name="message"
+              rows="5"
+              placeholder="Tell us about your needs or preferred appointment time…"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="contact-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ── Footer ───────────────────────────────────────────────── -->
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">Serenity</a>
+          <p class="footer-tagline">Restore. Balance. Renew.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="footer-info">
+          <p>24 Serenity Lane, London W1A 1AA</p>
           <p><a href="tel:+442071234567">+44 (0)20 7123 4567</a></p>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24">
-              <path
-                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-              />
-              <polyline points="22,6 12,13 2,6" />
-            </svg>
-          </div>
-          <h3>Email</h3>
           <p>
             <a href="mailto:hello@serenitymassage.co.uk"
               >hello@serenitymassage.co.uk</a
             >
           </p>
         </div>
-        <div class="contact-item">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24">
-              <circle cx="12" cy="12" r="10" />
-              <path d="M12 6v6l4 2" />
-            </svg>
-          </div>
-          <h3>Working Hours</h3>
-          <p>Mon – Fri: 9am – 8pm<br />Sat – Sun: 10am – 6pm</p>
-        </div>
       </div>
-    </section>
 
-    <!-- ── Footer ───────────────────────────────────────────────── -->
-    <footer class="footer">
-      <a href="#" class="footer-logo">Logo</a>
-      <p class="footer-copy">
-        &copy; 2026 Serenity Massage. All rights reserved.
-      </p>
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2026 Serenity Massage. All rights reserved.
+        </p>
+        <a href="#" class="footer-top-link">Back to top</a>
+      </div>
     </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <polyline points="18 15 12 9 6 15" />
+      </svg>
+    </button>
 
     <script src="scripts/navbar.js"></script>
     <script src="scripts/slider.js"></script>
     <script src="scripts/animations.js"></script>
+    <script src="scripts/back-to-top.js"></script>
+    <script src="scripts/faq.js"></script>
+    <script src="scripts/contact.js"></script>
   </body>
 </html>

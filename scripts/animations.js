@@ -29,7 +29,7 @@ function animateCards(sectionId, cardSelector) {
         observer.disconnect();
       }
     },
-    { threshold: 0.5 },
+    { threshold: 0.2 },
   );
 
   observer.observe(section);
@@ -37,3 +37,4 @@ function animateCards(sectionId, cardSelector) {
 
 animateCards("benefits", ".benefit-item");
 animateCards("testimonials", ".testimonial-item");
+animateCards("pricing", ".pricing-card");

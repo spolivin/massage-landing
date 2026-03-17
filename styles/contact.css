@@ -14,33 +14,41 @@
   color: #2f3a34;
 }
 
-.contact-grid {
+/* ── Two-column layout ──────────────────────────────────────── */
+.contact-body {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* ── Info column ────────────────────────────────────────────── */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
 }
 
 .contact-item {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
 .contact-icon {
-  width: 64px;
-  height: 64px;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   background: #f3ecdc;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem;
 }
 
 .contact-icon svg {
-  width: 26px;
-  height: 26px;
+  width: 22px;
+  height: 22px;
   stroke: #c9a96e;
   stroke-width: 1.5;
   fill: none;
@@ -49,12 +57,12 @@
 }
 
 .contact-item h3 {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #c9a96e;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
 .contact-item p {
@@ -74,15 +82,77 @@
   color: #c9a96e;
 }
 
-@media (max-width: 768px) {
-  .contact-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.4rem;
-  }
+/* ── Form ───────────────────────────────────────────────────── */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
-@media (max-width: 480px) {
-  .contact-grid {
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #2f3a34;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #2f3a34;
+  background: #fff;
+  border: 1px solid #e8dfd0;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s;
+  resize: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #2f3a34;
+  opacity: 0.35;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #c9a96e;
+}
+
+.contact-btn {
+  align-self: flex-start;
+  padding: 0.75rem 2rem;
+  background: #2f3a34;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contact-btn:hover {
+  background: #c9a96e;
+}
+
+@media (max-width: 768px) {
+  .contact-body {
     grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
 }

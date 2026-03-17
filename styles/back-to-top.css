@@ -1,0 +1,42 @@
+/* ── Back to top ────────────────────────────────────────────── */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #2f3a34;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(12px);
+  transition: opacity 0.3s ease, transform 0.3s ease, background 0.2s;
+  z-index: 999;
+}
+
+.back-to-top svg {
+  width: 20px;
+  height: 20px;
+  stroke: #fff;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: #c9a96e;
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    display: none;
+  }
+}
