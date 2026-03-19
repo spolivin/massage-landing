@@ -9,7 +9,7 @@ This project is a frontend skills showcase. The business, brand, content, and co
 ## What it demonstrates
 
 - Semantic HTML structure across multiple sections
-- CSS architecture with separate files per section
+- CSS architecture with separate files per section and design tokens via custom properties
 - CSS custom layouts: flexbox, CSS grid, scroll snap
 - Responsive design with mobile breakpoints
 - Vanilla JS for UI interactions (no libraries)
