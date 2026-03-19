@@ -162,19 +162,22 @@
   }
 
   .nav-links {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
     position: absolute;
     top: 72px;
     left: 0;
     right: 0;
-    flex-direction: column;
-    gap: 0;
     background: #fff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
   }
 
   .nav-links.open {
-    display: flex;
+    max-height: 400px;
   }
 
   .nav-links li {
