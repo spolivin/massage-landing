@@ -53,16 +53,40 @@
   bottom: -4px;
   width: 0;
   height: 2px;
-  background: #c9a96e;
+  background: var(--color-accent);
   transition: width 0.25s ease;
 }
 
 .nav-links a:hover {
-  color: #c9a96e;
+  color: var(--color-accent);
 }
 
 .nav-links a:hover::after {
   width: 100%;
+}
+
+/* ── CTA button ────────────────────────────────────────────── */
+.nav-cta-mobile {
+  display: none;
+}
+
+.nav-cta {
+  flex-shrink: 0;
+  padding: 0.65rem 1.6rem;
+  background: var(--color-accent);
+  color: #fff;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: var(--radius-pill);
+  transition: background var(--transition-base);
+}
+
+.nav-cta:hover {
+  background: var(--color-primary);
 }
 
 /* ── Hamburger button ──────────────────────────────────────── */
@@ -103,6 +127,37 @@
 
 /* ── Responsive ────────────────────────────────────────────── */
 @media (max-width: 768px) {
+  .nav-cta {
+    display: none;
+  }
+
+  .nav-links .nav-cta-mobile {
+    display: block;
+    padding: 1rem 5%;
+  }
+
+  .nav-links .nav-cta-mobile a {
+    display: inline-block;
+    padding: 0.55rem 1.4rem;
+    background: var(--color-accent);
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: var(--radius-pill);
+    transition: background var(--transition-base);
+  }
+
+  .nav-links .nav-cta-mobile a:hover {
+    background: var(--color-primary);
+  }
+
+  .nav-links .nav-cta-mobile a::after {
+    display: none;
+  }
+
   .nav-hamburger {
     display: flex;
   }
