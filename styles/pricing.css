@@ -10,9 +10,9 @@
 }
 
 .pricing-header h2 {
-  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-size: var(--font-size-heading);
   font-weight: 800;
-  color: #2f3a34;
+  color: var(--color-primary);
   margin-bottom: 0.8rem;
 }
 
@@ -20,7 +20,7 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.7;
-  color: #2f3a34;
+  color: var(--color-primary);
   max-width: 520px;
   margin: 0 auto;
 }
@@ -35,8 +35,8 @@
   display: flex;
   flex-direction: column;
   padding: 2rem 1.5rem;
-  border: 1px solid #e8dfd0;
-  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
   background: #fff;
   position: relative;
   opacity: 0;
@@ -50,7 +50,7 @@
 }
 
 .pricing-card.popular {
-  border-color: #c9a96e;
+  border-color: var(--color-accent);
 }
 
 .pricing-badge {
@@ -58,21 +58,21 @@
   top: -0.75rem;
   left: 50%;
   transform: translateX(-50%);
-  background: #c9a96e;
+  background: var(--color-accent);
   color: #fff;
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   padding: 0.25rem 0.9rem;
-  border-radius: 100px;
+  border-radius: var(--radius-pill);
   white-space: nowrap;
 }
 
 .pricing-card h3 {
   font-size: 1.1rem;
   font-weight: 800;
-  color: #2f3a34;
+  color: var(--color-primary);
   margin-bottom: 0.5rem;
 }
 
@@ -80,7 +80,7 @@
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.6;
-  color: #2f3a34;
+  color: var(--color-primary);
   opacity: 0.7;
   margin-bottom: 1.5rem;
 }
@@ -99,7 +99,7 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: 0.6rem;
-  border-bottom: 1px solid #f3ecdc;
+  border-bottom: 1px solid var(--color-bg-warm);
 }
 
 .pricing-options li:last-child {
@@ -109,33 +109,33 @@
 .duration {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #2f3a34;
+  color: var(--color-primary);
 }
 
 .price {
   font-size: 1rem;
   font-weight: 800;
-  color: #c9a96e;
+  color: var(--color-accent);
 }
 
 .pricing-btn {
   display: inline-block;
   text-align: center;
   padding: 0.65rem 1.5rem;
-  background: #2f3a34;
+  background: var(--color-primary);
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-family);
   font-weight: 700;
   font-size: 0.8rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
-  border-radius: 100px;
-  transition: background 0.2s;
+  border-radius: var(--radius-pill);
+  transition: background var(--transition-base);
 }
 
 .pricing-btn:hover {
-  background: #c9a96e;
+  background: var(--color-accent);
 }
 
 @media (max-width: 1024px) {

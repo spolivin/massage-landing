@@ -60,7 +60,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-family);
   font-weight: 400;
   color: #1a1a1a;
   background: #fff;

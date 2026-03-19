@@ -1,8 +1,8 @@
 /* ── Footer ────────────────────────────────────────────────── */
 .footer {
-  background: #2f3a34;
+  background: var(--color-primary);
   padding: 3rem 8% 2rem;
-  border-top: 2px solid #c9a96e;
+  border-top: 2px solid var(--color-accent);
 }
 
 /* ── Three-column main row ──────────────────────────────────── */
@@ -44,11 +44,11 @@
   font-weight: 500;
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color var(--transition-base);
 }
 
 .footer-nav a:hover {
-  color: #c9a96e;
+  color: var(--color-accent);
 }
 
 /* ── Contact info ───────────────────────────────────────────── */
@@ -68,11 +68,11 @@
 .footer-info a {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color var(--transition-base);
 }
 
 .footer-info a:hover {
-  color: #c9a96e;
+  color: var(--color-accent);
 }
 
 /* ── Bottom row ─────────────────────────────────────────────── */
@@ -95,11 +95,11 @@
   font-weight: 500;
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color var(--transition-base);
 }
 
 .footer-top-link:hover {
-  color: #c9a96e;
+  color: var(--color-accent);
 }
 
 @media (max-width: 768px) {
