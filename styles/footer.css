@@ -25,6 +25,86 @@
   margin-bottom: 0.5rem;
 }
 
+.footer-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+.footer-github svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.footer-github:hover {
+  color: var(--color-accent);
+}
+
+.footer-stack {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.footer-stack-label {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.footer-stack-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer-stack-icon {
+  position: relative;
+  display: inline-flex;
+  cursor: default;
+}
+
+.footer-stack-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: rgba(255, 255, 255, 0.4);
+  transition: fill var(--transition-base);
+}
+
+.footer-stack-icon:hover svg {
+  fill: var(--color-accent);
+}
+
+.footer-stack-icon::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-primary);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.7rem;
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.footer-stack-icon:hover::after {
+  opacity: 1;
+}
+
 .footer-tagline {
   font-size: 0.85rem;
   font-weight: 400;
