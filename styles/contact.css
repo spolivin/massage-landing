@@ -150,6 +150,76 @@
   background: var(--color-accent);
 }
 
+.contact-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* ── Field validation states ────────────────────────────────── */
+.form-group input.input-error,
+.form-group textarea.input-error {
+  border-color: #c0392b;
+}
+
+.form-group input.input-valid,
+.form-group textarea.input-valid {
+  border-color: #27ae60;
+}
+
+.field-msg {
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin-top: 0.1rem;
+}
+
+.field-msg--error {
+  color: #c0392b;
+}
+
+.field-msg--valid {
+  color: #27ae60;
+}
+
+/* ── Success state ──────────────────────────────────────────── */
+.form-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 3rem 2rem;
+  animation: fadeUp 0.5s ease both;
+}
+
+.form-success svg {
+  width: 56px;
+  height: 56px;
+  stroke: #27ae60;
+  stroke-width: 1.5;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.form-success h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.form-success p {
+  font-size: 0.95rem;
+  color: var(--color-primary);
+  opacity: 0.75;
+  line-height: 1.6;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 @media (max-width: 768px) {
   .contact-body {
     grid-template-columns: 1fr;
