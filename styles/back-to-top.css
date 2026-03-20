@@ -35,7 +35,7 @@
   background: var(--color-accent);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .back-to-top {
     display: none;
   }
