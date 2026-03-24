@@ -1,13 +1,19 @@
 // Navbar hide/show on scroll direction
 const navbar = document.getElementById("navbar");
 let lastScrollY = 0;
+let navTicking = false;
 window.addEventListener("scroll", () => {
-  const currentScrollY = window.scrollY;
-  navbar.classList.toggle(
-    "hidden",
-    currentScrollY > lastScrollY && currentScrollY > 72,
-  );
-  lastScrollY = currentScrollY;
+  if (navTicking) return;
+  requestAnimationFrame(() => {
+    const currentScrollY = window.scrollY;
+    navbar.classList.toggle(
+      "hidden",
+      currentScrollY > lastScrollY && currentScrollY > 72,
+    );
+    lastScrollY = currentScrollY;
+    navTicking = false;
+  });
+  navTicking = true;
 });
 
 // Hamburger menu
