@@ -21,11 +21,14 @@
 }
 
 .nav-logo {
-  font-weight: 800;
-  font-size: 1.4rem;
-  color: var(--color-primary);
   text-decoration: none;
-  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-logo-img {
+  height: 36px;
+  width: auto;
 }
 
 .nav-links {
