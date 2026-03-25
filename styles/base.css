@@ -34,6 +34,8 @@
   --color-primary: #2f3a34;
   --color-bg-warm: #f3ecdc;
   --color-border: #e8dfd0;
+  --color-error: #c0392b;
+  --color-success: #27ae60;
 
   --font-size-heading: clamp(1.8rem, 3.5vw, 2.6rem);
 

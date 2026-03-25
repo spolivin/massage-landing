@@ -158,12 +158,12 @@
 /* ── Field validation states ────────────────────────────────── */
 .form-group input.input-error,
 .form-group textarea.input-error {
-  border-color: #c0392b;
+  border-color: var(--color-error);
 }
 
 .form-group input.input-valid,
 .form-group textarea.input-valid {
-  border-color: #27ae60;
+  border-color: var(--color-success);
 }
 
 .field-msg {
@@ -173,11 +173,11 @@
 }
 
 .field-msg--error {
-  color: #c0392b;
+  color: var(--color-error);
 }
 
 .field-msg--valid {
-  color: #27ae60;
+  color: var(--color-success);
 }
 
 /* ── Success state ──────────────────────────────────────────── */
@@ -195,7 +195,7 @@
 .form-success svg {
   width: 56px;
   height: 56px;
-  stroke: #27ae60;
+  stroke: var(--color-success);
   stroke-width: 1.5;
   fill: none;
   stroke-linecap: round;
