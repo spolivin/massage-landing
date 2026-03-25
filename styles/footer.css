@@ -15,14 +15,14 @@
 
 /* ── Brand ──────────────────────────────────────────────────── */
 .footer-logo {
-  font-weight: 900;
-  font-size: 1.1rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #fff;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
   margin-bottom: 0.5rem;
+}
+
+.footer-logo-img {
+  height: 32px;
+  width: auto;
 }
 
 .footer-github {
