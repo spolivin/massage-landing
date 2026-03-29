@@ -42,7 +42,7 @@
 }
 
 .about-text p {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 400;
   line-height: 1.8;
   color: var(--color-primary);
@@ -50,6 +50,8 @@
 
 .about-image {
   width: 100%;
+  max-width: 480px;
+  justify-self: center;
 }
 
 @media (max-width: 768px) {
