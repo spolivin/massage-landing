@@ -53,7 +53,6 @@
   height: 380px;
   object-fit: cover;
   display: block;
-  border-radius: var(--radius-card);
 }
 
 .slide-content {
@@ -66,7 +65,6 @@
   text-align: center;
   padding: 2rem;
   background: rgba(0, 0, 0, 0.35);
-  border-radius: var(--radius-card);
 }
 
 .slide-content h3 {
