@@ -1,8 +1,8 @@
 /* ── Footer ────────────────────────────────────────────────── */
 .footer {
-  background: #2f3a34;
+  background: var(--color-primary);
   padding: 3rem 8% 2rem;
-  border-top: 2px solid #c9a96e;
+  border-top: 2px solid var(--color-accent);
 }
 
 /* ── Three-column main row ──────────────────────────────────── */
@@ -15,14 +15,94 @@
 
 /* ── Brand ──────────────────────────────────────────────────── */
 .footer-logo {
-  font-weight: 900;
-  font-size: 1.1rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #fff;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
   margin-bottom: 0.5rem;
+}
+
+.footer-logo-img {
+  height: 32px;
+  width: auto;
+}
+
+.footer-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+.footer-github svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.footer-github:hover {
+  color: var(--color-accent);
+}
+
+.footer-stack {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.footer-stack-label {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.footer-stack-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer-stack-icon {
+  position: relative;
+  display: inline-flex;
+  cursor: default;
+}
+
+.footer-stack-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: rgba(255, 255, 255, 0.4);
+  transition: fill var(--transition-base);
+}
+
+.footer-stack-icon:hover svg {
+  fill: var(--color-accent);
+}
+
+.footer-stack-icon::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-primary);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.7rem;
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.footer-stack-icon:hover::after {
+  opacity: 1;
 }
 
 .footer-tagline {
@@ -44,11 +124,11 @@
   font-weight: 500;
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color var(--transition-base);
 }
 
 .footer-nav a:hover {
-  color: #c9a96e;
+  color: var(--color-accent);
 }
 
 /* ── Contact info ───────────────────────────────────────────── */
@@ -68,38 +148,86 @@
 .footer-info a {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color var(--transition-base);
 }
 
 .footer-info a:hover {
-  color: #c9a96e;
+  color: var(--color-accent);
 }
 
 /* ── Bottom row ─────────────────────────────────────────────── */
 .footer-bottom {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
   align-items: center;
   padding-top: 1.5rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.footer-copy {
+.footer-credits {
+  display: flex;
+  gap: 1.5rem;
   font-size: 0.8rem;
+  color: var(--color-accent);
+  width: 100%;
+  justify-content: center;
+}
+
+.footer-credit-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 700;
+  transition: opacity var(--transition-base);
+}
+
+.footer-credit-name {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer-credit-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.footer-credit-role {
+  font-size: 0.65rem;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+.footer-credit-link svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+.footer-credit-link:hover {
+  opacity: 0.7;
 }
 
 .footer-top-link {
+  display: none;
+  margin-top: 0.5rem;
   font-size: 0.8rem;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color var(--transition-base);
 }
 
 .footer-top-link:hover {
-  color: #c9a96e;
+  color: var(--color-accent);
 }
 
 @media (max-width: 768px) {
@@ -113,13 +241,22 @@
 }
 
 @media (max-width: 480px) {
+  .footer-top-link {
+    display: block;
+    margin-top: 1rem;
+  }
+
+
   .footer-main {
     grid-template-columns: 1fr;
   }
 
   .footer-bottom {
-    flex-direction: column;
     gap: 0.75rem;
+    text-align: center;
+  }
+
+  .footer-credits {
     text-align: center;
   }
 }

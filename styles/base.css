@@ -28,6 +28,25 @@
   font-display: swap;
 }
 
+/* ── Design tokens ─────────────────────────────────────────── */
+:root {
+  --color-accent: #c9a96e;
+  --color-primary: #2f3a34;
+  --color-bg-warm: #f3ecdc;
+  --color-border: #e8dfd0;
+  --color-error: #c0392b;
+  --color-success: #27ae60;
+
+  --font-size-heading: clamp(1.8rem, 3.5vw, 2.6rem);
+
+  --radius-pill: 100px;
+  --radius-card: 8px;
+
+  --transition-base: 0.2s;
+
+  --font-family: "Montserrat", sans-serif;
+}
+
 /* ── Reset & Base ──────────────────────────────────────────── */
 *,
 *::before,
@@ -43,7 +62,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-family);
   font-weight: 400;
   color: #1a1a1a;
   background: #fff;

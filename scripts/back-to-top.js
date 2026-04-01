@@ -1,7 +1,13 @@
 const backToTop = document.getElementById("backToTop");
+let backToTopTicking = false;
 
 window.addEventListener("scroll", () => {
-  backToTop.classList.toggle("visible", window.scrollY > 300);
+  if (backToTopTicking) return;
+  requestAnimationFrame(() => {
+    backToTop.classList.toggle("visible", window.scrollY > 300);
+    backToTopTicking = false;
+  });
+  backToTopTicking = true;
 });
 
 backToTop.addEventListener("click", () => {

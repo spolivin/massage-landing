@@ -1,7 +1,7 @@
 /* ── FAQ ────────────────────────────────────────────────────── */
 .faq {
   padding: 80px 8%;
-  background: #f3ecdc;
+  background: var(--color-bg-warm);
 }
 
 .faq-header {
@@ -10,9 +10,9 @@
 }
 
 .faq-header h2 {
-  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-size: var(--font-size-heading);
   font-weight: 800;
-  color: #2f3a34;
+  color: var(--color-primary);
   margin-bottom: 0.8rem;
 }
 
@@ -20,7 +20,7 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.7;
-  color: #2f3a34;
+  color: var(--color-primary);
   max-width: 520px;
   margin: 0 auto;
 }
@@ -35,7 +35,7 @@
 
 .faq-item {
   background: #fff;
-  border-radius: 8px;
+  border-radius: var(--radius-card);
   overflow: hidden;
 }
 
@@ -49,10 +49,10 @@
   background: none;
   border: none;
   cursor: pointer;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-family);
   font-size: 0.95rem;
   font-weight: 700;
-  color: #2f3a34;
+  color: var(--color-primary);
   text-align: left;
 }
 
@@ -60,7 +60,7 @@
   flex-shrink: 0;
   width: 20px;
   height: 20px;
-  stroke: #c9a96e;
+  stroke: var(--color-accent);
   transition: transform 0.3s ease;
 }
 
@@ -79,6 +79,6 @@
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.75;
-  color: #2f3a34;
+  color: var(--color-primary);
   opacity: 0.8;
 }

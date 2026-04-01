@@ -1,7 +1,7 @@
 /* ── Services ──────────────────────────────────────────────── */
 .services {
   padding: 63px 14%;
-  background: #f3ecdc;
+  background: var(--color-bg-warm);
 }
 
 .services-header {
@@ -10,9 +10,9 @@
 }
 
 .services-header h2 {
-  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-size: var(--font-size-heading);
   font-weight: 800;
-  color: #2f3a34;
+  color: var(--color-primary);
   margin-bottom: 0.8rem;
 }
 
@@ -20,7 +20,7 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.7;
-  color: #2f3a34;
+  color: var(--color-primary);
   max-width: 520px;
   margin: 0 auto;
 }
@@ -53,7 +53,6 @@
   height: 380px;
   object-fit: cover;
   display: block;
-  border-radius: 8px;
 }
 
 .slide-content {
@@ -66,7 +65,6 @@
   text-align: center;
   padding: 2rem;
   background: rgba(0, 0, 0, 0.35);
-  border-radius: 8px;
 }
 
 .slide-content h3 {
@@ -89,21 +87,21 @@
   display: inline-block;
   padding: 0.65rem 2rem;
   background: #fff;
-  color: #2f3a34;
-  font-family: "Montserrat", sans-serif;
+  color: var(--color-primary);
+  font-family: var(--font-family);
   font-weight: 700;
   font-size: 0.8rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
-  border-radius: 100px;
+  border-radius: var(--radius-pill);
   transition:
-    background 0.2s,
-    color 0.2s;
+    background var(--transition-base),
+    color var(--transition-base);
 }
 
 .slide-btn:hover {
-  background: #c9a96e;
+  background: var(--color-accent);
   color: #fff;
 }
 
@@ -123,16 +121,16 @@
 .slider-arrow svg {
   width: 36px;
   height: 36px;
-  stroke: #2f3a34;
+  stroke: var(--color-primary);
   stroke-width: 1.5;
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
-  transition: stroke 0.2s;
+  transition: stroke var(--transition-base);
 }
 
 .slider-arrow:hover svg {
-  stroke: #c9a96e;
+  stroke: var(--color-accent);
 }
 
 .slider-arrow:disabled {
@@ -141,7 +139,7 @@
 }
 
 .slider-arrow:disabled:hover svg {
-  stroke: #2f3a34;
+  stroke: var(--color-primary);
 }
 
 @media (max-width: 768px) {
@@ -178,5 +176,5 @@
   font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 0.1em;
-  color: #2f3a34;
+  color: var(--color-primary);
 }
