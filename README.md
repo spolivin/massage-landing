@@ -20,6 +20,7 @@ This project is a frontend skills showcase. The business, brand, content, and co
 - CSS-only tooltips via `data-tooltip` attribute and `::after` pseudo-element — no JavaScript required
 - Inline SVG icons with `fill: currentColor` for theme-aware colouring
 - Local custom fonts via `@font-face` (no Google Fonts)
+- Resource hints (`<link rel="preload">` + `fetchpriority="high"`) for the first slider image to eliminate load flash
 
 ## Sections
 
