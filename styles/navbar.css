@@ -1,7 +1,28 @@
+/* ── Demo banner ───────────────────────────────────────────── */
+.demo-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 101;
+  height: var(--banner-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5%;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-align: center;
+  white-space: nowrap;
+}
+
 /* ── Navbar ────────────────────────────────────────────────── */
 .navbar {
   position: fixed;
-  top: 0;
+  top: var(--banner-height);
   left: 0;
   right: 0;
   transform: translateY(0);
