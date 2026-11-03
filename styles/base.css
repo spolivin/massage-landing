@@ -39,6 +39,8 @@
 
   --font-size-heading: clamp(1.8rem, 3.5vw, 2.6rem);
 
+  --banner-height: 32px;
+
   --radius-pill: 100px;
   --radius-card: 8px;
 
